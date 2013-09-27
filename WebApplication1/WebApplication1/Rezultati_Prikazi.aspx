@@ -1,0 +1,164 @@
+﻿<%@ Page Title="Прикажи Резултат" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Rezultati_Prikazi.aspx.cs" Inherits="WebApplication1.Rezultati_Prikazi" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
+    <style type="text/css">
+
+#accordion {
+    list-style: none;
+    padding: 0 0 0 0;
+    width: 810px;
+    
+}
+#accordion div {
+    display:block;
+    font-weight:normal;
+    margin: 0px;
+    cursor: pointer;
+    padding: 0 0 0 0px;
+    list-style: circle;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 0px;
+}
+#accordion ul {
+    list-style: none;
+    padding: 0 0 0 0;
+}
+#accordion ul{
+    display: none;
+}
+#accordion ul li {
+    font-weight: normal;
+    cursor: auto;
+    background-color: #fff;
+    padding: 0 0 0 7px;
+}
+#accordion a {
+    text-decoration: none;
+}
+#accordion a:hover {
+    text-decoration: underline;
+    background:#E0F8F7;
+}
+
+#accordion h3:hover {
+    text-decoration: underline;
+      background:#F5D0A9;
+}
+
+#accordion h3 {
+    text-decoration: underline;
+    background:#F3E2A9;
+}
+
+#accordion .style {
+    
+    background:#F8ECE0;
+}    
+    
+
+        .style5
+        {
+            width: 82px;
+        }
+
+        </style>
+
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+
+<div id="accordion">
+        <h3>&nbsp;ПОДАТОЦИ Зa Внесените Резултати</h3>
+            
+        <div class="style">
+
+
+            <table class="style1">
+               
+                <tr>
+                    <td class="style5">
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                </tr>
+               
+                <tr>
+                    <td class="style5">
+                        &nbsp;</td>
+                    <td style="text-align: center">
+                        Приказ на податоците за внесените Резултати 
+                    </td>
+                </tr>
+                <tr>
+                    <td class="style5">
+                       &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="style5">
+                        &nbsp;</td>
+                    <td>
+                        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" 
+                            DataKeyNames="rezultat_id" DataSourceID="SqlDataSource1">
+                            <Columns>
+                                <asp:BoundField DataField="rezultat_id" HeaderText="rezultat_id" 
+                                    InsertVisible="False" ReadOnly="True" SortExpression="rezultat_id" />
+                                <asp:BoundField DataField="rezultat_tip" HeaderText="rezultat_tip" 
+                                    SortExpression="rezultat_tip" />
+                                <asp:BoundField DataField="rezultat_kategorija" 
+                                    HeaderText="rezultat_kategorija" SortExpression="rezultat_kategorija" />
+                                <asp:BoundField DataField="rezultat_datum" HeaderText="rezultat_datum" 
+                                    SortExpression="rezultat_datum" />
+                            </Columns>
+                        </asp:GridView>
+                        <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
+                            ConnectionString="<%$ ConnectionStrings:login_probaConnectionString %>" 
+                            SelectCommand="SELECT * FROM [Rezultati]"></asp:SqlDataSource>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="style5">
+                        &nbsp;</td>
+                    <td>
+
+
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="style5">
+                        &nbsp;</td>
+                    <td>
+
+
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="style5">
+                        &nbsp;</td>
+                    <td>
+
+
+        <asp:Label ID="notify_1" runat="server" Text=""></asp:Label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="style5">
+                        &nbsp;</td>
+                    <td>
+
+
+                        &nbsp;</td>
+                </tr>
+            </table>
+
+
+        </div>
+        <h3>
+            Section 22</h3>
+        <div>
+           
+        </div>
+    </div>
+
+
+</asp:Content>

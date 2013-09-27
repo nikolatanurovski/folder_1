@@ -1,0 +1,477 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0B0F6488-63D4-41A2-B90D-6B01D87DAF99}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebApplication1</RootNamespace>
+    <AssemblyName>WebApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=4.1.7.607, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="bin\AjaxControlToolkit.dll" />
+    <Content Include="Clenovi_Izbrishi.aspx" />
+    <Content Include="Clenovi_Prikazi.aspx" />
+    <Content Include="Clenovi_Spored_rezultat.aspx" />
+    <Content Include="Clen_Postignuva_Rezultati.aspx" />
+    <Content Include="Clen_Post_Rez_Izmeni.aspx" />
+    <Content Include="Clen_Ucestvo_Turnir_Izmeni.aspx" />
+    <Content Include="img\Untitled-1 copy.png" />
+    <Content Include="Klubovi_Dodadi.aspx" />
+    <Content Include="Clenovi_Promeni.aspx" />
+    <Content Include="Klubovi_Izbrishi.aspx" />
+    <Content Include="Klubovi_Prikazi.aspx" />
+    <Content Include="Klubovi_Promeni.aspx" />
+    <Content Include="Klubovi_Spored_Rezultat.aspx" />
+    <Content Include="Klub_Postignuva_Rezultati.aspx" />
+    <Content Include="Klub_Postignuva_rezultati_Izmeni.aspx" />
+    <Content Include="Rezultati.aspx" />
+    <Content Include="Rezultati_Izbrishi.aspx" />
+    <Content Include="Rezultati_Prikazi.aspx" />
+    <Content Include="Rezultati_Promeni.aspx" />
+    <Content Include="Rezultat_Clenovi.aspx" />
+    <Content Include="Rezultat_Klubovi.aspx" />
+    <Content Include="Turniri_Izbrishi.aspx" />
+    <Content Include="Clenovi_Vnesi.aspx" />
+    <Content Include="Kontroli\WebUserControl1.ascx" />
+    <Content Include="Turniri_Dodadi.aspx" />
+    <Content Include="Scripts\jquery-1.2.1.min.js" />
+    <Content Include="Scripts\menu.js" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Styles\style.css" />
+    <Content Include="Turniri_Prikazi.aspx" />
+    <Content Include="Turniri_Promeni.aspx" />
+    <Content Include="Turnir_Postignuva_Rezultati.aspx" />
+    <Content Include="Turnir_Postignuva_Rezultati_Izmeni.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Clen-Ucestvo-Turnir.aspx" />
+    <Content Include="Clen_Postignuva_Rezultati_Prikazi.aspx" />
+    <Content Include="Clen_Clenuva_Klub_Prikazi.aspx" />
+    <Content Include="Klub_Ucestvuva_Turnir.aspx" />
+    <Content Include="Clen_Ucestvo_Turnir_Prikazi.aspx" />
+    <Content Include="Klubovi_Prikazi_Rezultati_Turniri.aspx" />
+    <Content Include="Turnir_Postignuva_Rezultat_Prikazi.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Clenovi_Izbrishi.aspx.cs">
+      <DependentUpon>Clenovi_Izbrishi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Clenovi_Izbrishi.aspx.designer.cs">
+      <DependentUpon>Clenovi_Izbrishi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Clenovi_Prikazi.aspx.cs">
+      <DependentUpon>Clenovi_Prikazi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Clenovi_Prikazi.aspx.designer.cs">
+      <DependentUpon>Clenovi_Prikazi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Clenovi_Spored_rezultat.aspx.cs">
+      <DependentUpon>Clenovi_Spored_rezultat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Clenovi_Spored_rezultat.aspx.designer.cs">
+      <DependentUpon>Clenovi_Spored_rezultat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Clen_Postignuva_Rezultati.aspx.cs">
+      <DependentUpon>Clen_Postignuva_Rezultati.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Clen_Postignuva_Rezultati.aspx.designer.cs">
+      <DependentUpon>Clen_Postignuva_Rezultati.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Clen_Post_Rez_Izmeni.aspx.cs">
+      <DependentUpon>Clen_Post_Rez_Izmeni.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Clen_Post_Rez_Izmeni.aspx.designer.cs">
+      <DependentUpon>Clen_Post_Rez_Izmeni.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Clen_Ucestvo_Turnir_Izmeni.aspx.cs">
+      <DependentUpon>Clen_Ucestvo_Turnir_Izmeni.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Clen_Ucestvo_Turnir_Izmeni.aspx.designer.cs">
+      <DependentUpon>Clen_Ucestvo_Turnir_Izmeni.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Klubovi_Dodadi.aspx.cs">
+      <DependentUpon>Klubovi_Dodadi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Klubovi_Dodadi.aspx.designer.cs">
+      <DependentUpon>Klubovi_Dodadi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Clenovi_Promeni.aspx.cs">
+      <DependentUpon>Clenovi_Promeni.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Clenovi_Promeni.aspx.designer.cs">
+      <DependentUpon>Clenovi_Promeni.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Klubovi_Izbrishi.aspx.cs">
+      <DependentUpon>Klubovi_Izbrishi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Klubovi_Izbrishi.aspx.designer.cs">
+      <DependentUpon>Klubovi_Izbrishi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Klubovi_Prikazi.aspx.cs">
+      <DependentUpon>Klubovi_Prikazi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Klubovi_Prikazi.aspx.designer.cs">
+      <DependentUpon>Klubovi_Prikazi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Klubovi_Promeni.aspx.cs">
+      <DependentUpon>Klubovi_Promeni.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Klubovi_Promeni.aspx.designer.cs">
+      <DependentUpon>Klubovi_Promeni.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Klubovi_Spored_Rezultat.aspx.cs">
+      <DependentUpon>Klubovi_Spored_Rezultat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Klubovi_Spored_Rezultat.aspx.designer.cs">
+      <DependentUpon>Klubovi_Spored_Rezultat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Klub_Postignuva_Rezultati.aspx.cs">
+      <DependentUpon>Klub_Postignuva_Rezultati.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Klub_Postignuva_Rezultati.aspx.designer.cs">
+      <DependentUpon>Klub_Postignuva_Rezultati.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Klub_Postignuva_rezultati_Izmeni.aspx.cs">
+      <DependentUpon>Klub_Postignuva_rezultati_Izmeni.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Klub_Postignuva_rezultati_Izmeni.aspx.designer.cs">
+      <DependentUpon>Klub_Postignuva_rezultati_Izmeni.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Rezultati.aspx.cs">
+      <DependentUpon>Rezultati.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Rezultati.aspx.designer.cs">
+      <DependentUpon>Rezultati.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Rezultati_Izbrishi.aspx.cs">
+      <DependentUpon>Rezultati_Izbrishi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Rezultati_Izbrishi.aspx.designer.cs">
+      <DependentUpon>Rezultati_Izbrishi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Rezultati_Prikazi.aspx.cs">
+      <DependentUpon>Rezultati_Prikazi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Rezultati_Prikazi.aspx.designer.cs">
+      <DependentUpon>Rezultati_Prikazi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Rezultati_Promeni.aspx.cs">
+      <DependentUpon>Rezultati_Promeni.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Rezultati_Promeni.aspx.designer.cs">
+      <DependentUpon>Rezultati_Promeni.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Rezultat_Clenovi.aspx.cs">
+      <DependentUpon>Rezultat_Clenovi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Rezultat_Clenovi.aspx.designer.cs">
+      <DependentUpon>Rezultat_Clenovi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Rezultat_Klubovi.aspx.cs">
+      <DependentUpon>Rezultat_Klubovi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Rezultat_Klubovi.aspx.designer.cs">
+      <DependentUpon>Rezultat_Klubovi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site2.Master.cs">
+      <DependentUpon>Site2.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site2.Master.designer.cs">
+      <DependentUpon>Site2.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Turniri_Izbrishi.aspx.cs">
+      <DependentUpon>Turniri_Izbrishi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Turniri_Izbrishi.aspx.designer.cs">
+      <DependentUpon>Turniri_Izbrishi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Clenovi_Vnesi.aspx.cs">
+      <DependentUpon>Clenovi_Vnesi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Clenovi_Vnesi.aspx.designer.cs">
+      <DependentUpon>Clenovi_Vnesi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Kontroli\WebUserControl1.ascx.cs">
+      <DependentUpon>WebUserControl1.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kontroli\WebUserControl1.ascx.designer.cs">
+      <DependentUpon>WebUserControl1.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Turniri_Dodadi.aspx.cs">
+      <DependentUpon>Turniri_Dodadi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Turniri_Dodadi.aspx.designer.cs">
+      <DependentUpon>Turniri_Dodadi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Clen-Ucestvo-Turnir.aspx.cs">
+      <DependentUpon>Clen-Ucestvo-Turnir.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Clen-Ucestvo-Turnir.aspx.designer.cs">
+      <DependentUpon>Clen-Ucestvo-Turnir.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Turniri_Prikazi.aspx.cs">
+      <DependentUpon>Turniri_Prikazi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Turniri_Prikazi.aspx.designer.cs">
+      <DependentUpon>Turniri_Prikazi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Turniri_Promeni.aspx.cs">
+      <DependentUpon>Turniri_Promeni.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Turniri_Promeni.aspx.designer.cs">
+      <DependentUpon>Turniri_Promeni.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Turnir_Postignuva_Rezultati.aspx.cs">
+      <DependentUpon>Turnir_Postignuva_Rezultati.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Turnir_Postignuva_Rezultati.aspx.designer.cs">
+      <DependentUpon>Turnir_Postignuva_Rezultati.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Turnir_Postignuva_Rezultati_Izmeni.aspx.cs">
+      <DependentUpon>Turnir_Postignuva_Rezultati_Izmeni.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Turnir_Postignuva_Rezultati_Izmeni.aspx.designer.cs">
+      <DependentUpon>Turnir_Postignuva_Rezultati_Izmeni.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Clen_Postignuva_Rezultati_Prikazi.aspx.cs">
+      <DependentUpon>Clen_Postignuva_Rezultati_Prikazi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Clen_Postignuva_Rezultati_Prikazi.aspx.designer.cs">
+      <DependentUpon>Clen_Postignuva_Rezultati_Prikazi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Clen_Clenuva_Klub_Prikazi.aspx.cs">
+      <DependentUpon>Clen_Clenuva_Klub_Prikazi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Clen_Clenuva_Klub_Prikazi.aspx.designer.cs">
+      <DependentUpon>Clen_Clenuva_Klub_Prikazi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Klub_Ucestvuva_Turnir.aspx.cs">
+      <DependentUpon>Klub_Ucestvuva_Turnir.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Klub_Ucestvuva_Turnir.aspx.designer.cs">
+      <DependentUpon>Klub_Ucestvuva_Turnir.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Clen_Ucestvo_Turnir_Prikazi.aspx.cs">
+      <DependentUpon>Clen_Ucestvo_Turnir_Prikazi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Clen_Ucestvo_Turnir_Prikazi.aspx.designer.cs">
+      <DependentUpon>Clen_Ucestvo_Turnir_Prikazi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Klubovi_Prikazi_Rezultati_Turniri.aspx.cs">
+      <DependentUpon>Klubovi_Prikazi_Rezultati_Turniri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Klubovi_Prikazi_Rezultati_Turniri.aspx.designer.cs">
+      <DependentUpon>Klubovi_Prikazi_Rezultati_Turniri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Turnir_Postignuva_Rezultat_Prikazi.aspx.cs">
+      <DependentUpon>Turnir_Postignuva_Rezultat_Prikazi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Turnir_Postignuva_Rezultat_Prikazi.aspx.designer.cs">
+      <DependentUpon>Turnir_Postignuva_Rezultat_Prikazi.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Pages\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Site1.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Site2.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\Site.Master.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>27746</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
